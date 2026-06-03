@@ -944,6 +944,13 @@
       </div>
       <a class="btn-buy" id="btn-buy-guide" href="#" target="_blank">Get My Complete Guide →</a>
 
+      <div style="margin-top:20px;padding-top:18px;border-top:1px solid rgba(201,168,76,0.15);text-align:center;">
+        <p style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:0.15em;color:rgba(201,168,76,0.5);text-transform:uppercase;margin-bottom:10px;">Already have your guide?</p>
+        <a href="https://hiddenlaws.bookdecoded.com" style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:0.12em;color:#C9A84C;text-decoration:none;text-transform:uppercase;border-bottom:1px solid rgba(201,168,76,0.3);padding-bottom:2px;">
+          Access your reader companion →
+        </a>
+      </div>
+
       <div class="separator-or">or get it free with your email</div>
 
       <div class="email-form">
@@ -1447,7 +1454,7 @@ function ordinalLabel(d) {
 }
 
 // ─── EMAIL CAPTURE ──────────────────────────────────────────────────────────
-function submitEmail() {
+async function submitEmail() {
   const email = document.getElementById('email-input').value.trim();
   if (!email || !email.includes('@')) {
     alert('Please enter a valid email address.');
@@ -1563,9 +1570,12 @@ document.getElementById('btn-buy-guide').addEventListener('click', function(e) {
   <h3>What are Master Number birth dates?</h3>
   <p>In numerology, the 11th and 22nd are Master Number dates. The 11 is the Master Intuitive and the 22 is the Master Builder. These dates carry amplified gifts and amplified challenges. The Born on the Date guides for these dates include special Master Number Edition content recognizing their distinct financial profiles.</p>
 </section>
-<div style="position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:100;text-align:center;">
+<div style="position:fixed;bottom:0;left:0;right:0;z-index:100;background:rgba(13,13,26,0.96);border-top:1px solid rgba(201,168,76,0.2);padding:12px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;">
   <a href="https://book.bookdecoded.com" style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:0.15em;color:rgba(201,168,76,0.4);text-decoration:none;text-transform:uppercase;">
-    &larr; Back to The Hidden Laws of Money
+    &larr; Sales Page
+  </a>
+  <a href="https://hiddenlaws.bookdecoded.com" style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:0.15em;color:#C9A84C;text-decoration:none;text-transform:uppercase;border:1px solid rgba(201,168,76,0.3);padding:8px 16px;transition:border-color 0.2s;">
+    Access Your Reader Companion &rarr;
   </a>
 </div>
 </body>
